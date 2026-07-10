@@ -51,16 +51,16 @@ All subsequent runs reuse the saved calibration and frames.
 | Exit line selection | User clicks 2 points to define the classification exit line |
 | Full PTV | Detects, tracks, cleans, computes velocities, renders all outputs |
 
-### Output images
+### Output images (the ones i based most of my code on)
 
 | File | Description |
 | --- | --- |
-| `results/trajectories_direction.png` | Trajectories color-coded by movement direction (HSV hue), brightness = time |
-| `results/trajectories_speed.png` | Trajectories color-coded by speed (blue = slow, yellow = fast) |
-| `results/trajectories_zeros.png` | Highlights zero-speed steps (< 0.05 cm/s) in red |
-| `results/trajectories_categories.png` | Group A (blue) near exit line vs group B (red) not studied |
-| `results/speed_distribution.png` | Histogram with mean, median, p95, p99 |
-| `results/a_correlation_hist.png` | Pearson r distribution for group A trajectories |
+| `results/v3_slow/trajectories_direction.png` | Trajectories color-coded by movement direction (HSV hue), brightness = time |
+| `results/v3_slow/trajectories_speed.png` | Trajectories color-coded by speed (blue = slow, yellow = fast) |
+| `results/v3_slow/trajectories_zeros.png` | Highlights zero-speed steps (< 0.05 cm/s) in red |
+| `results/v3_slow/trajectories_categories.png` | Group A (blue) near exit line vs group B (red) not studied |
+| `results/v3_slow/speed_distribution.png` | Histogram with mean, median, p95, p99 |
+| `results/v3_slow/a_correlation_hist.png` | Pearson r distribution for group A trajectories |
 
 ### Standalone scripts
 
@@ -98,17 +98,19 @@ The classification uses a **sink flow** model: particles are expected to converg
 
 ## Preview
 
-![Trajectories color-coded by speed](results/trajectories_speed.png)
+![Trajectories color-coded by speed](results/v3_slow/trajectories_speed.png)
 
-![Trajectories color-coded by direction](results/trajectories_direction.png)
+![Trajectories color-coded by direction](results/v3_slow/trajectories_direction.png)
 
-![Speed distribution histogram](results/speed_distribution.png)
+![Speed distribution histogram](results/v3_slow/speed_distribution.png)
 
-![Zero-step detection](results/trajectories_zeros.png)
+![Zero-step detection](results/v3_slow/trajectories_zeros.png)
 
-![Trajectory categories](results/trajectories_categories.png)
+![Trajectory categories](results/v3_slow/trajectories_categories.png)
 
-![Group A correlation histogram](results/a_correlation_hist.png)
+![Group A correlation histogram](results/v3_slow/a_correlation_hist.png)
+
+The other results are not as good as this one because my hyperparameters for detection where not optimal and i didn't got the time to tune them.
 
 ## Credits
 
