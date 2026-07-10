@@ -22,8 +22,8 @@ A Python pipeline that extracts, tracks and classifies particle motion from vide
 ## Installation
 
 ```bash
-git clone 
-cd TB
+git clone https://github.com/Lunfeer/330.1-bachelor-thesis
+cd 330.1-bachelor-thesis
 uv sync
 ```
 
